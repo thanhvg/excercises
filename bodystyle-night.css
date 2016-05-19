@@ -1,0 +1,6 @@
+/*index.php will use this css in ngiht time*/
+
+body {
+  background-image: url(img/background-night.jpg);
+  background-size: cover;
+}

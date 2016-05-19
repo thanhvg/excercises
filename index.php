@@ -1,19 +1,19 @@
+<?php
+include('functions.php');
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
 <?php include("head.inc.php"); ?>
-<style media="screen">
-  body {
-    background-image: url(img/background.jpg);
-    background-size: cover;
-  }
-</style>
+<link type="text/css" rel="stylesheet" href="<?php print(csswriter()); ?>">
 <title>Thanh's Assignments</title>
+
 </head>
 <body>
 
 <div class="header">
 <?php include("header.inc.php"); ?>
+<h2 align="center"><?php print(greeting()); ?></h2>
 </div>
 
 <div class="row">
