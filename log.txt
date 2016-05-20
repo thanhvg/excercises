@@ -1,0 +1,2 @@
+May 19, 2016, 7:12 pm SUCCESSED: INSERT INTO `agents` (`AgtFirstName`, `AgtMiddleInitial`, `AgtLastName`, `AgtBusPhone`, `AgtEmail`, `AgtPosition`, `AgencyId`) VALUES (?, ?, ?, ?, ?, ?, ?);
+May 19, 2016, 7:14 pm SUCCESSED: INSERT INTO `agents` (`AgtFirstName`, `AgtMiddleInitial`, `AgtLastName`, `AgtBusPhone`, `AgtEmail`, `AgtPosition`, `AgencyId`) VALUES (?, ?, ?, ?, ?, ?, ?);

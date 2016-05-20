@@ -4,5 +4,7 @@
   <li><a href="register.php">Register</a></li>
   <li><a href="links.php">Links (day 8)</a></li>
   <li><a href="day4.html">Day 4 Javascript</a></li>
+  <li><a href="day10.php">Angent entry</a></li>
+  <li><a href="agentlogin.php">Angent login</a></li>
 
 </ul>
