@@ -1,0 +1,45 @@
+<?php
+class AgentStatus {
+  public $isLoggedIn = false;
+
+  function __construct() {
+    if (session_id() == "") {
+      session_start();
+    }
+    if (isset($_SESSION['isLoggedIn']) &&  $_SESSION['isLoggedIn'] == true)  {
+      $this->isLoggedIn = true;
+    }
+  }
+
+public function authenticate($user, $pass) {
+  $fh = fopen("userinfo.txt", "r");
+  while ($line = fgets($fh))
+  {
+   list($u, $p) = explode(",", $line);
+   $users[$u] = chop($p);
+  }
+  fclose($fh);
+
+  if (isset($users[$user]) && $users[$user] == md5($pass)) {
+    $_SESSION['isLoggedIn'] = true;
+    $this->isLoggedIn = true;
+    return true;
+  }
+  return false;
+}
+
+function logout() {
+  $this->isLoggedIn = false;
+  if (session_id() == "") {
+    session_start();
+  }
+  $_SESSION['isLoggedIn'] = false;
+  foreach ($_SESSION as $key => $value) {
+    $_SESSION[$key] = "";
+    unset($_SESSION[$key]);
+  }
+  $_SESSION = array();
+  session_destroy();
+}
+}
+ ?>

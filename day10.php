@@ -1,3 +1,9 @@
+<?php
+require_once("AgentStatus.class");
+$agentStatus = new AgentStatus();
+if (!$agentStatus->isLoggedIn)
+header("Location: login.php");
+ ?>
 <!DOCTYPE html>
 <html>
 <head>

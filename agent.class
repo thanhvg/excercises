@@ -1,0 +1,25 @@
+<?php
+class agent {
+
+public $AgentId ;
+public $AgtFirstName;
+public $AgtMiddleInitial;
+public $AgtLastName;
+public $AgtBusPhone;
+public $AgtEmail;
+public $AgtPosition;
+public $AgencyId;
+
+function __construct() {
+  if (session_id() == "") {
+    session_start();
+  }
+  if (isset($_SESSION['isLoggedIn']) &&  $_SESSION['isLoggedIn'] == true)  {
+    $this->_initUser();
+  }
+}
+
+public function authenticate($)
+
+}
+ ?>
