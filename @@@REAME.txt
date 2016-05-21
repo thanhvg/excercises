@@ -1,0 +1,5 @@
+Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016
+WAMP/LAMP is required
+MySQL login using root and blank password
+user name: root
+password:
