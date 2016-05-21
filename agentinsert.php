@@ -1,5 +1,8 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- validate form in da10.php then insert in sql table -->
 <?php
 include("functions.php");
+include("agent.class");
 
 function validate()
 {
@@ -16,7 +19,9 @@ function validate()
 
 if (isset($_REQUEST["AgtFirstName"])) {
   if (validate())  {
-    if (addAgent($_REQUEST))  {
+  $values = array_values($_REQUEST);
+  $agent = new Agent($values[0], $values[1], $values[2], $values[3], $values[4], $values[5], $values[6]);
+    if (addAgentI($agent))  {
       header("Location: day10.php");
     } else  {
       //pass a fail message and reload form page

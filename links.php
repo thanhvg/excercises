@@ -16,15 +16,7 @@
   <div class="row">
 
     <div class="col-3 menu">
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="register.php">Register</a></li>
-        <li><a href="links.php">Links (day 8)</a></li>
-        <li><a href="day4.html">Day 4 Javascript</a></li>
-
-        <li>The Food</li>
-      </ul>
+      <?php include("menu.inc.php"); ?>
     </div>
 
     <div class="col-9">

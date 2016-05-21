@@ -1,3 +1,5 @@
+/*Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016 */
+
 * {
     box-sizing: border-box;
 }
@@ -48,9 +50,14 @@ background-size:contain;
 .menu a {
   text-decoration: none;
   font-weight: bold;
+
 }
 .menu li:hover {
     background-color: #0099cc;
+}
+.menu .current {
+  background-color: orange;
+  box-shadow: 0 0 20px red;
 }
 
 .footer {
@@ -66,4 +73,9 @@ background-size:contain;
 .linkHover {
   box-shadow: 0px 0px 5px red;
   //width: 100%;
+}
+
+form .col-5 label {
+  text-align: right;
+  float: right;
 }

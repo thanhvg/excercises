@@ -1,3 +1,6 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- Modular design, includes header.inc.php , menu.inc.php and footer.inc.php -->
+
 <?php
 include('functions.php');
  ?>
@@ -17,7 +20,7 @@ include('functions.php');
 </div>
 
 <div class="row">
-
+  
 <div class="col-3 menu">
 <?php include("menu.inc.php"); ?>
 </div>
@@ -36,8 +39,6 @@ include('functions.php');
 <img src="img/tulum.png" alt="p1" style="width:100%" />
   </div>
 </div>
-
-
 <div class="row">
   <p>Links</p>
   <div class="col-6" align="center">
@@ -46,16 +47,14 @@ include('functions.php');
   <div class="col-6" align="center">
   <a href="register.html" > <img class="linkHover" src="img/label_customer_member_regis.gif"/> </a>
   </div>
+</div>
+</div>
 
-</div>
-</div>
 </div>
 
 <div class="footer">
   <?php include("footer.inc.php"); ?>
-
 </div>
-
 
 </body>
 </html>

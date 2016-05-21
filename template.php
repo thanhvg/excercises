@@ -1,3 +1,5 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- Template php file -->
 <!DOCTYPE html>
 <html>
 <head>

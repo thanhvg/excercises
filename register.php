@@ -1,3 +1,6 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- dummy registation page  -->
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,3 +1,5 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- boring contacts -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
   <div class="row">
 
     <div class="col-3 menu">
-    <?php include("menu.inc.php"); ?>
+      <?php include("menu.inc.php"); ?>
     </div>
 
     <div class="col-9">
@@ -37,9 +39,8 @@
 
   <div class="footer">
     <?php include("footer.inc.php"); ?>
+  </div>
+  
 
-    </div>
-
-
-  </body>
-  </html>
+</body>
+</html>

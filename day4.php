@@ -1,3 +1,5 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- JS confirm message -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,14 +31,7 @@
   <div class="row">
 
     <div class="col-3 menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="register.html">Register</a></li>
-<li><a href="form.html">Form</a></li>
-        <li><a href="day4.html">Day 4 Javascript</a></li>
-        <li>The Food</li>
-      </ul>
+      <?php include("menu.inc.php"); ?>
     </div>
 
     <div class="col-9">

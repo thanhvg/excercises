@@ -41,7 +41,6 @@
     var email = $('#emailInput').val();
     var telephone = $('#telInput').val();
     var message = $('#messageInput').val();
-
     var firstName = $('#inputFirstName').val();
     var lastName = $('#inputLastName').val();
     var userName = $('#inputUserName').val();
@@ -62,15 +61,12 @@
         $(fieds[i]).after('<span class="error"> Please enter your ' + msgs[i] + '</span>');
         flag = 1;
       }
-
     }
     if(!emailReg.test(email)) {
       $('#inputEmail').after('<span class="error"> Please enter a valid email address');
       flag = 2;
     }
     return flag;
-
-
   }
   </script>
 </head>
@@ -84,13 +80,7 @@
   <div class="row">
 
     <div class="col-3 menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="day4.html">Day 4 Javascript</a></li>
-        <li>The Food</li>
-      </ul>
+      <?php include("menu.inc.php"); ?>
     </div>
 
     <div class="col-9">
@@ -444,7 +434,7 @@
           </div>
         </div>
       </form>
-    
+
     </div>
 
   </div>

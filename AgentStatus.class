@@ -1,3 +1,6 @@
+<!-- Gia Thanh Vuong - CPRG210 - Web Application Concepts - May 2016  -->
+<!-- This class manages the authentication of the agent $isLoggedIn true if logged in-->
+
 <?php
 class AgentStatus {
   public $isLoggedIn = false;
@@ -11,7 +14,7 @@ class AgentStatus {
     }
   }
 
-public function authenticate($user, $pass) {
+public function authenticate($user, $pass) { // verify agent, and log him in if OK
   $fh = fopen("userinfo.txt", "r");
   while ($line = fgets($fh))
   {
@@ -28,7 +31,7 @@ public function authenticate($user, $pass) {
   return false;
 }
 
-function logout() {
+function logout() { //log out agent
   $this->isLoggedIn = false;
   if (session_id() == "") {
     session_start();
