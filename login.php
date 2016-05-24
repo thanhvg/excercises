@@ -19,6 +19,12 @@ if ($agentStatus->isLoggedIn) { // if agent already logged in, this will log him
   <html>
   <head>
     <?php include("head.inc.php"); ?>
+    <style media="screen">
+    label {
+      text-align: right;
+      float: right;
+    }
+    </style>
   </head>
 
   <body>
@@ -61,7 +67,7 @@ if ($agentStatus->isLoggedIn) { // if agent already logged in, this will log him
               <input type="submit" value="Log In" />
             </div>
           </div>
-          
+
         </form>
         <p style="color:red;">
           <?php print($error); ?>
@@ -97,8 +103,6 @@ if ($agentStatus->isLoggedIn) { // if agent already logged in, this will log him
             </td>
           </tr>
         </table>
-
-
 
       </div>
     </div>
